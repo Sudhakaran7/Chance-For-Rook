@@ -1,0 +1,93 @@
+On an 8 x 8 chessboard, there is one white rook. There also may be empty squares, white bishops, and black pawns.  These are given as characters 'R', '.', 'B', and 'p' 
+respectively. Uppercase characters represent white pieces, and lowercase characters represent black pieces.
+The rook moves as in the rules of Chess: it chooses one of four cardinal directions (north, east, west, and south), then moves in that direction until it chooses to stop, 
+reaches the edge of the board, or captures an opposite colored pawn by moving to the same square it occupies.  Also, rooks cannot move into the same square 
+as other friendly bishops.
+Return the number of pawns the rook can capture in one move.
+
+Input Description:
+Eight line contains, '.','P','R' with spaces in eight lines.
+
+Output Description:
+Print the number of pawns the rook can capture in one move.
+
+Sample Input:
+. . . . . . . .
+. . P . . . . .
+. . R . . . . .
+. . . . . . . P
+. . . . . . . .
+. . P . . . . .
+. . P . . . . .
+. . . . . . . .
+
+Sample Output:
+2
+
+Explanation:
+In third row the rook can capture the pawn in second row and sixth row so the count is 2.
+
+Sample Input:
+. . . . . . . .
+. . P . . . . .
+. . R . . . . p
+. . . . . . . .
+. . . . . . . .
+. . P . . . . .
+. . . . . . . .
+. . . . . . . .
+
+Sample Output:
+3
+
+Sample Input:
+. . . . . . . .
+. . . . . . . .
+. . P . R . . .
+. . . . . . . P
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+Sample Output:
+1
+
+Sample Input:
+. . . . . . . .
+. . . . . . . .
+. . . . . . p .
+. . . . . . . .
+. . p . . . R .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+Sample Output:
+2
+
+Sample input:
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . R . . . . P
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . P . . . . .
+
+Sample Output:
+2
+
+Sample Input:
+. . . . . . . .
+. . . . . . . .
+. . . . . P . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . P . .
+. . . . . . R .
+
+Ssmple Output:
+0
